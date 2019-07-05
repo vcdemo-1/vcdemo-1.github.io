@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Audio Samples</title>
+  <style>
+body {
+  margin:0;
+  padding:10px 30px;
+  background: #fff;
+  color: #111;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+audio {
+  width: 250px;
+  margin-right: 10px;
+}
+.sample {
+  font-size: 0.9em;
+  font-style: italic;
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+</style>
+</head>
+<body>
+    <h2>Audio samples for the paper: Voice Conversion Across Arbitrary Speakers based on a Single Target-Speaker Utterance. </h2>
+  <ul>
+    <li>The models are trained using VCTK corpus. Audios are resampled to 16kHz.</li>
+    <li>In the sequel, "1 sample" means that i-vector or speaker embedding of a new target speaker are computed using one target speaker's utterance and so on so forth. "IVC Converted" denotes the converted speech using the i-vector-based VC model (please refer to the paper for the details), while "SEVC converted" denotes the converted speech using the speaker-encoder-based VC model.</li>
+  </ul>
+
+    <h3>Different adaptation when 30 target utterances are avaliable:</h3>
+
+      <!-- F2M -->
+    <h4>Female2Male</h4>
+    <table border="1">
+    <tr>
+      <td>Convert Model</td>
+      <td>male01</td>
+      <td>male02</td>
+      <td>female01</td>
+      <td>female02</td>
+    </tr>
+    <!-- MF 1 sample 4 pieces of audios  -->
+    <tr>
+      <td>target utterance</td>
+      <td>
+        <audio controls>
+        <source src="utt30/target-male01.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="utt30/target-male01.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="utt30/target-male01.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="utt30/target-male01.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    </tr>
+    <!-- MF 1 sample 4 pieces of audios  -->
+    <tr>
+      <td>source utterance</td>
+      <td>
+        <audio controls>
+        <source src="utt30/src.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="utt30/src.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="utt30/src.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="utt30/src.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    <!-- FF 5 sample 4 pieces of audios  -->
+    <tr>
+      <td>ivec-MSVC</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-F.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN05MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN05MF.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    <!-- FF 10 sample 4 pieces of audios  -->
+    <tr>
+      <td>ivec-AL</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-F.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN10MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN10MF.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+        <tr>
+      <td>ivec-whole</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-F.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN10MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN10MF.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    <tr>
+      <td>xvec-MSVC</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-F.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN10MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN10MF.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    <tr>
+      <td>xvec-AL</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-F.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN10MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN10MF.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+        <tr>
+      <td>xvec-whole</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-F.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN10MF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN10MF.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    </table>
+
+  <!-- FF -->
+  <h4>Female-to-Female:</h4>
+    <table border="1">
+    <tr>
+      <td>Number of samples</td>
+      <td>Source Utterance</td>
+      <td>Target Utterance</td>
+      <td>IVC Converted</td>
+      <td>SEVC Converted</td>
+    </tr>
+    <!-- FF 1 sample 4 pieces of audios  -->
+    <tr>
+      <td>1 sample</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-FF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-F.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN01FF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN01FF.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    <!-- FF 5 sample 4 pieces of audios  -->
+    <tr>
+      <td>5 samples</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-FF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-F.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN05FF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN05FF.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    <!-- FF 10 sample 4 pieces of audios  -->
+    <tr>
+      <td>10 samples</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-FF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-F.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN10FF.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN10FF.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    </table>
+
+
+    <!-- FM -->
+    <h4>Female-to-Male:</h4>
+    <table border="1">
+    <tr>
+      <td>Number of samples</td>
+      <td>Source Utterance</td>
+      <td>Target Utterance</td>
+      <td>IVC Converted</td>
+      <td>SEVC Converted</td>
+    </tr>
+    <!-- FM 1 sample 4 pieces of audios  -->
+    <tr>
+      <td>1 sample</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-FM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-M.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN01FM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN01FM.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    <!-- FF 5 sample 4 pieces of audios  -->
+    <tr>
+      <td>5 samples</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-FM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-M.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN05FM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN05FM.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    <!-- FF 10 sample 4 pieces of audios  -->
+    <tr>
+      <td>10 samples</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-FM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-M.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN10FM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN10FM.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    </table>
+
+
+    <!-- MM -->
+    <h4>Male-to-Male:</h4>
+    <table border="1">
+    <tr>
+      <td>Number of samples</td>
+      <td>Source Utterance</td>
+      <td>Target Utterance</td>
+      <td>IVC Converted</td>
+      <td>SEVC Converted</td>
+    </tr>
+    <!-- MM 1 sample 4 pieces of audios  -->
+    <tr>
+      <td>1 sample</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-MM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-M.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN01MM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN01MM.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    <!-- FF 5 sample 4 pieces of audios  -->
+    <tr>
+      <td>5 samples</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-MM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-M.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN05MM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN05MM.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    <!-- FF 10 sample 4 pieces of audios  -->
+    <tr>
+      <td>10 samples</td>
+      <td>
+        <audio controls>
+        <source src="src-GT-MM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="tgt-GT-M.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="ivcN10MM.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td>
+        <audio controls>
+        <source src="SEN10MM.wav" type="audio/wav">
+        </audio>
+      </td>      
+    </tr>
+    </table>
+       
+
+</body>
+</html>
+
+
