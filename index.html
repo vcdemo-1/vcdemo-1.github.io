@@ -31,14 +31,16 @@ audio {
 </style>
 </head>
 <body>
-    <h2>Audio samples for the paper: VOICE CONVERSION TOWARDS ARBITRARY SPEAKERS WITH LIMITED DATA </h2>
+    <h2>Audio samples for the paper: NON-PARALLEL SEQUENCE TO SEQUENCE VOICE CONVERSION FOR ARBITRARY SPEAKERS </h2>
   <ul>
-    <li>The models are trained using VCTK corpus. Audios are resampled to 16kHz.</li>
-    <li>In the sequel, "MSVC is the multi-speaker voice conversion model without adaptation; whole and AL are adaptation for whole MSVC model and additional layers. utt-n means the number of adaptive utterances(please refer to the paper for the details)" </li>
+    <li>The models are trained using our Mandarin corpus. Audios are resampled to 16kHz.</li>
+    <li>In the sequel, "seq2seq ctc_090 is the abbreviation of sequence-to-sequence voice conversion model with the threshold of 0.90 removing blank tokens.
+      seq2seq ctc_099 is the same way. seq2seq ctc_onehot is the abbreviation of sequence-to-sequence voice conversion model with one-hot encoding, and all blank tokens are thrown away.
+      F2F-VC is the abbreviation of frame-to-frame voice conversion model.(please refer to the paper for the details)" </li>
     <li>some of utterances are clipped with the same content from source or converted ones in order to speed up page load.
   </ul>
 
-    <h3>Different adaptation when 30 target utterances are avaliable:</h3>
+    <h3>comparison of F2F-VC model and seq2seq-VC model</h3>
 
       <!-- F2M -->
     
@@ -101,7 +103,7 @@ audio {
     </tr>
     <!-- FF 5 sample 4 pieces of audios  -->
     <tr>
-      <td>ivec-MSVC</td>
+      <td>F2F-VC</td>
       <td>
         <audio controls>
         <source src="utt30/female2male/utt30-src-ivec-msvc.wav" type="audio/wav">
@@ -125,7 +127,7 @@ audio {
     </tr>
     <!-- FF 10 sample 4 pieces of audios  -->
     <tr>
-      <td>ivec-AL</td>
+      <td>seq2seq ctc_090</td>
       <td>
         <audio controls>
         <source src="utt30/female2male/utt30-src-ivec-al.wav" type="audio/wav">
@@ -171,7 +173,7 @@ audio {
       </td>      
     </tr>
     <tr>
-      <td>xvec-MSVC</td>
+      <td>seq2seq ctc_099</td>
       <td>
         <audio controls>
         <source src="utt30/female2male/utt30-src-xvec-msvc.wav" type="audio/wav">
@@ -194,7 +196,7 @@ audio {
       </td>      
     </tr>
     <tr>
-      <td>xvec-AL</td>
+      <td>seq2seq ctc_onehot</td>
       <td>
         <audio controls>
         <source src="utt30/female2male/utt30-src-xvec-al.wav" type="audio/wav">
